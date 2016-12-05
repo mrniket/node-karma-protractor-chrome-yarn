@@ -28,10 +28,14 @@ To configure karma and protractor, use this snippets:
 
 ## Gitlab CI
 
-To run karma and protractor on gitlab ci, just use this image, and configure karma and protractor as above. 
+To run karma and protractor on gitlab ci, just use this image, and configure karma and protractor as above.
 http://doc.gitlab.com/ce/ci/yaml/README.html#image-and-services
 
 ## On Docker Hub
-https://hub.docker.com/r/weboaks/node5-karma-protractor-chrome/
+https://hub.docker.com/r/mrniket/node-karma-protractor-chrome-yarn
 
-    docker pull weboaks/node5-karma-protractor-chrome
+    docker pull mrniket/node-karma-protractor-chrome-yarn
+
+## Forked from sylvaindumont
+
+Repo - https://github.com/sylvaindumont/docker-node5-karma-protractor-chrome
