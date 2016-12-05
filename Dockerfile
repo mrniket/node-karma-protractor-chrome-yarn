@@ -11,8 +11,8 @@ RUN curl -sL https://deb.nodesource.com/setup_7.x | bash - && \
     openjdk-7-jre-headless \
     && rm -rf /var/lib/apt/lists/*
 
-RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-RUN echo "deb http://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+RUN echo "deb http://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
 
 ENV DISPLAY :99
 ENV CHROME_BIN /usr/bin/chromium
